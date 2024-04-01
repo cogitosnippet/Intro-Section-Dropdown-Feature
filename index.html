@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utility.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="mobile-menu" id="menu">
+    <p class="mobile-menu-close"><img src="images/icon-close-menu.svg" alt="" srcset="" id="menu-close"></p>
+    <div class="mobile-menu-container">
+      <div class="mobile-menu-nav-links">
+        <p class="nav-head" id="feature-mobile-arrow">Features<span><img src="images/icon-arrow-down.svg" class="arrow" id="feature-mobile-arrow-down"></span></p>
+        <div class="dropdown-mobile-feature-container" id="feature-dropdown-mobile-id">
+          <div class="feature-dropdown-mobile">
+            <div class="features-item">
+              <img src="images/icon-todo.svg" alt="">
+              <p class="feature-dropdown-list">Todo List</p>
+            </div>
+            <div class="features-item">
+              <img src="images/icon-calendar.svg" alt="">
+              <p class="feature-dropdown-list">Calendar</p>
+            </div>
+            <div class="features-item">
+              <img src="images/icon-reminders.svg" alt="">
+              <p class="feature-dropdown-list">Reminders</p>
+            </div>
+            <div class="features-item">
+              <img src="images/icon-planning.svg" alt="">
+              <p class="feature-dropdown-list">Planning</p>
+            </div>
+          </div>
+        </div>
+        <p class="nav-head" id="company-mobile-arrow">Company<span><img src="images/icon-arrow-down.svg" class="arrow" id="company-mobile-arrow-down"></span></p>
+        <div class="dropdown-mobile-company-container" id="company-dropdown-mobile-id">
+          <div class="company-dropdown-mobile">
+            <p class="gap">History</p>
+            <p class="gap">Our Team</p>
+            <p class="gap">Blog</p>
+          </div>
+        </div>
+        <p class="nav-head">Careers</p>
+        <p class="nav-head">About</p>
+      </div>
+      <div class="mobile-menu-login">
+        <p class="login nav-head">Login</p>
+        <button class="register-button mobile-menu-button">Register</button>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-header-container">
+    <header class="flex mobile-header">
+      <img src="images/logo.svg">
+      <img src="images/icon-menu.svg" id="menu-icon">
+    </header>
+  </div>
+  <div class="desktop-header-container">
+    <header class="flex desktop-header">
+      <div class="left-header flex">
+        <img src="images/logo.svg" alt="" srcset="">
+        <div class="nav-links flex">
+          <p class="feature nav-head" id="feature-arrow">Features<span><img src="images/icon-arrow-down.svg" class="arrow" id="feature-arrow-down"></span></p>
+          <p class="company nav-head" id="company-arrow">Company<span><img src="images/icon-arrow-down.svg" class="arrow" id="company-arrow-down"></span></p>
+          <p class="career nav-head">Careers</p>
+          <p class="about nav-head">About</p>
+          <div class="feature-dropdown" id="feature-dropdown-id">
+            <div class="features-item">
+              <img src="images/icon-todo.svg" alt="">
+              <p class="feature-dropdown-list">Todo List</p>
+            </div>
+            <div class="features-item">
+              <img src="images/icon-calendar.svg" alt="">
+              <p class="feature-dropdown-list">Calendar</p>
+            </div>
+            <div class="features-item">
+              <img src="images/icon-reminders.svg" alt="">
+              <p class="feature-dropdown-list">Reminders</p>
+            </div>
+            <div class="features-item">
+              <img src="images/icon-planning.svg" alt="">
+              <p class="feature-dropdown-list">Planning</p>
+            </div>
+          </div>
+          <div class="company-dropdown" id="company-dropdown-id">
+            <p class="gap">History</p>
+            <p class="gap">Our Team</p>
+            <p class="gap">Blog</p>
+          </div>
+        </div>
+      </div>
+      <div class="right-header flex">
+        <p class="login nav-head">Login</p>
+        <button class="register-button">Register</button>
+      </div>
+    </header>
+  </div>
+  <div class="container">
+    <section class="left">
+      <div class="left-content">
+        <h1 class="heading">Make remote work</h1>
+        <div class="info">
+          <p class="information">Get your team in sync, no matter your location. Streamline processes create team rituals, and watch productivity soar.</p>
+        </div>
+        <div class="info">
+         <button class="learn-more">Learn more</button>
+        </div>
+      </div>
+      <div class="clients">
+        <img src="images/client-databiz.svg" alt="" srcset="" class="client-logo">
+        <img src="images/client-audiophile.svg" alt="" srcset="" class="client-logo">
+        <img src="images/client-maker.svg" alt="" srcset="" class="client-logo">
+        <img src="images/client-meet.svg" alt="" srcset="" class="client-logo">
+      </div>
+    </section>
+    <section class="right">
+      <img src="images/image-hero-desktop.png" alt="" srcset="" class="desktop-image">
+      <img src="images/image-hero-mobile.png" alt="" srcset="" class="mobile-image">
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
